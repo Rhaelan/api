@@ -279,7 +279,7 @@ const data = {
                     value: '20',
                     type: 'string',
                     optional: 'no',
-                    sample: 'Default = 20',
+                    sample: 'Default - 20',
                     description: 'kline'
                 },
                 {
