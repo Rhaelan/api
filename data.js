@@ -14,14 +14,6 @@ const data = {
             method: 'POST',
             headers: [
                 {
-                    key: 'id',
-                    value: 'application/json',
-                    type: 'string',
-                    optional: 'no',
-                    sample: 'application/json',
-                    description: 'content type to be send to server'
-                },
-                {
                     key: 'token',
                     value: 'deviceId|device_token',
                     type: 'string',
@@ -131,14 +123,6 @@ const data = {
             method: 'POST',
             headers: [
                 {
-                    key: 'id',
-                    value: 'application/json',
-                    type: 'string',
-                    optional: 'no',
-                    sample: 'application/json',
-                    description: 'content type to be send to server'
-                },
-                {
                     key: 'token',
                     value: 'deviceId|device_token',
                     type: 'string',
@@ -195,14 +179,6 @@ const data = {
             method: 'POST',
             headers: [
                 {
-                    key: 'id',
-                    value: 'application/json',
-                    type: 'string',
-                    optional: 'no',
-                    sample: 'application/json',
-                    description: 'content type to be send to server'
-                },
-                {
                     key: 'token',
                     value: 'deviceId|device_token',
                     type: 'string',
@@ -217,7 +193,7 @@ const data = {
                     value: '41',
                     type: 'string',
                     optional: 'no',
-                    sample: '41',
+                    sample: '41 - ST, 42 - BEAT',
                     description: 'trade pair id'
                 },
                 {
@@ -225,7 +201,7 @@ const data = {
                     value: '2',
                     type: 'string',
                     optional: 'no',
-                    sample: '2',
+                    sample: 'Default - 2',
                     description: 'wallet id'
                 },
                 {
@@ -233,7 +209,7 @@ const data = {
                     value: '1',
                     type: 'string',
                     optional: 'no',
-                    sample: '1',
+                    sample: '1 - Buy, 2 - Sell',
                     description: 'side'
                 },
                 {
@@ -280,14 +256,6 @@ const data = {
             path: '/api/kline',
             method: 'POST',
             headers: [
-                {
-                    key: 'id',
-                    value: 'application/json',
-                    type: 'string',
-                    optional: 'no',
-                    sample: 'application/json',
-                    description: 'content type to be send to server'
-                },
                 {
                     key: 'token',
                     value: 'deviceId|device_token',
@@ -383,14 +351,6 @@ const data = {
             method: 'POST',
             headers: [
                 {
-                    key: 'id',
-                    value: 'application/json',
-                    type: 'string',
-                    optional: 'no',
-                    sample: 'application/json',
-                    description: 'content type to be send to server'
-                },
-                {
                     key: 'token',
                     value: 'deviceId|device_token',
                     type: 'string',
@@ -456,14 +416,6 @@ const data = {
             path: '/api/tickers',
             method: 'POST',
             headers: [
-                {
-                    key: 'id',
-                    value: 'application/json',
-                    type: 'string',
-                    optional: 'no',
-                    sample: 'application/json',
-                    description: 'content type to be send to server'
-                },
                 {
                     key: 'token',
                     value: 'deviceId|device_token',
@@ -727,14 +679,6 @@ const data = {
             path: '/api/trade_histoy',
             method: 'POST',
             headers: [
-                {
-                    key: 'id',
-                    value: 'application/json',
-                    type: 'string',
-                    optional: 'no',
-                    sample: 'application/json',
-                    description: 'content type to be send to server'
-                },
                 {
                     key: 'token',
                     value: 'deviceId|device_token',
@@ -1261,14 +1205,6 @@ const data = {
             path: '/api/wallet_assets',
             method: 'POST',
             headers: [
-                {
-                    key: 'id',
-                    value: 'application/json',
-                    type: 'string',
-                    optional: 'no',
-                    sample: 'application/json',
-                    description: 'content type to be send to server'
-                },
                 {
                     key: 'token',
                     value: 'deviceId|device_token',
