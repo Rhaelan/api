@@ -2,9 +2,9 @@
 const data = {
     api_name: 'Node API',
     api_version: '1.0.1',
-    api_endpoint_development: 'http://localhost/api-docs',
-    api_endpoint_staging: 'https://npt-yet/api-docs',
-    api_endpoint_production: 'http://not-yet/api-docs',
+    api_endpoint_development: 'https://fple-crypt-spot-orders.vercel.app',
+    api_endpoint_staging: 'https://fple-crypt-spot-orders.vercel.app',
+    api_endpoint_production: 'https://fple-crypt-spot-orders.vercel.app',
     apis: [
         // Active
         {
