@@ -1,0 +1,292 @@
+html {
+    line-height: 1.5;
+    font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body, html {
+    background-color: rgb(243 244 246);
+    width: 100%;
+    scroll-behavior: smooth;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#left {
+    width: 310px;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(243 244 246);
+}
+
+#left div {
+    transition-duration: 300ms;
+    color: rgb(107 114 128 / 1);
+    border-radius: 0.375rem;
+    transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+
+    margin-bottom: 0.25rem;
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem; */
+    cursor: pointer;
+    display: inline-flex;
+    width: 100%;
+}
+
+#left div a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+#left div.active,
+#left div:hover {
+    color: rgb(30 64 175 / 1);
+    background-color: rgb(219 234 254 / 1);
+    border-radius: 0.375rem;
+    transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
+
+#left div.active {
+    font-weight: 700;
+}
+
+#right {
+    margin-left: 320px;
+    width: calc(100% - 320px);
+    overflow: hidden;
+}
+
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+    width: 100%;
+   }
+
+#right h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+}
+
+#right small {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+#right h5 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    font-weight: normal;
+}
+
+#right .name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    color: rgb(75 85 99 / 1);
+    margin-top: 1.5rem;
+}
+
+#right .desc {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(107 114 128 / 1);
+}
+
+.box {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pathMethodBox {
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.pathMethodBox .method {
+    color: rgb(75 85 99 / 1);
+    font-weight: 700;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(253 224 71 / 1);
+    border-radius: 0.25rem;
+    justify-content: center;
+    display: flex;
+}
+
+.pathMethodBox .method.GET {
+    background-color: rgb(134 239 172 / 1);
+}
+
+.pathMethodBox .method.POST {
+    background-color: rgb(253 224 71 / 1);
+}
+
+.pathMethodBox .method.PATCH {
+    background-color: rgb(147 197 253 / 1);
+}
+
+.pathMethodBox .method.PUT {
+    background-color: rgb(147 197 253 / 1);
+}
+
+.pathMethodBox .method.DELETE {
+    background-color: rgb(252 165 165 / 1);
+}
+
+.pathMethodBox .path {
+    color: rgb(243 244 246 / 1);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(31 41 55 / 1);
+    border-radius: 0.25rem;
+    align-items: center;
+    width: 24rem;
+    display: flex;
+    margin-left: 1rem;
+}
+
+.headerCont {
+    color: rgb(31 41 55 / 1);
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headerTable {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-width: 1px;
+    width: -webkit-fill-available;
+    margin-bottom: 0.75rem;
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headerTable thead {
+    color: rgb(75 85 99 / 1);
+    background-color: rgb(229 231 235 / 1);
+}
+
+.headerTable thead tr th {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-color: rgb(209 213 219 / 1);
+}
+
+.headerTable tbody tr {
+    background-color: rgb(255 255 255 / 1);
+}
+
+.headerTable tbody tr td {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.responseCont,
+.bodyCont {
+    font-weight: 900;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.responseTable,
+.bodyTable {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-width: 1px;
+    width: -webkit-fill-available;
+    margin-bottom: 0.75rem;
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bodyTable thead {
+    color: rgb(75 85 99 / 1);
+    background-color: rgb(229 231 235 / 1);
+}
+
+.bodyTable thead tr th {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-color: rgb(209 213 219 / 1);
+    margin-top: 10px;
+    border-width: 1px;
+}
+
+.bodyTable tbody tr {
+    background-color: rgb(255 255 255 / 1);
+}
+
+.bodyTable tbody tr td {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-width: 1px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.responseCont,
+.headerCont,
+.bodyCont {
+    margin-top: 10px;
+}
+
+.responseContent {
+    background : #444;
+    color: white;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(107,114,128);
+}
+
+a.active {
+    color: blue;
+}
