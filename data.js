@@ -387,6 +387,88 @@ const data = {
         },
 
 
+        // Depth
+        {
+            name: 'depth',
+            description: "Depth",
+            path: '/api/depth',
+            method: 'POST',
+            headers: [
+                {
+                    key: 'token',
+                    value: 'deviceId|device_token',
+                    type: 'string',
+                    optional: 'no',
+                    sample: '10260|gg9OaZQmradDJ8uKfuQXbrg0Xl15cKzBe6eAXV50',
+                    description: 'content type to be send to server'
+                }
+            ],
+            body: [
+                {
+                    key: 'trade_pair_id',
+                    value: '41',
+                    type: 'string',
+                    optional: 'no',
+                    sample: '41 - ST, 42 - BEAT',
+                    description: 'trade pair id'
+                },
+            ],
+            response: {
+                "status": true,
+                "code": 200,
+                "msg": "Success",
+                "data": {
+                    "data": {
+                        "buy": [
+                            {
+                                "order_price": 0.1,
+                                "unfilled_qty": 101,
+                                "side": 1
+                            },
+                            {
+                                "order_price": 0.11,
+                                "unfilled_qty": 300,
+                                "side": 1
+                            },
+                            {
+                                "order_price": 0.13,
+                                "unfilled_qty": 99.999,
+                                "side": 1
+                            },
+                            {
+                                "order_price": 0.14,
+                                "unfilled_qty": 557.285,
+                                "side": 1
+                            }
+                        ],
+                        "sell": [
+                            {
+                                "order_price": 0.16,
+                                "unfilled_qty": 99.999,
+                                "side": -1
+                            },
+                            {
+                                "order_price": 181,
+                                "unfilled_qty": 1,
+                                "side": -1
+                            },
+                            {
+                                "order_price": 1000,
+                                "unfilled_qty": 100,
+                                "side": -1
+                            },
+                            {
+                                "order_price": 20000000,
+                                "unfilled_qty": 100,
+                                "side": -1
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+
+
         // Kline
         {
             name: 'kline',
@@ -871,6 +953,7 @@ const data = {
                         "status": true,
                         "data": [
                             {
+<<<<<<< HEAD
                                 "id": "ce3fd32c-625a-11ee-9f6f-0243f897b3cc",
                                 "spot_pair": 41,
                                 "base_symbol": "USDT",
@@ -1016,10 +1099,14 @@ const data = {
                             },
                             {
                                 "id": "5983eae0-61eb-11ee-9f6f-0243f897b3cc",
+=======
+                                "id": "609f96b4-61d6-11ee-9f6f-0243f897b3cc",
+>>>>>>> refs/remotes/origin/main
                                 "spot_pair": 42,
                                 "base_symbol": "USDT",
                                 "coin_symbol": "BEAT",
                                 "trade_pair_name": "BEAT/USDT",
+<<<<<<< HEAD
                                 "order_type": 1,
                                 "order_type_name": "Limit",
                                 "direction": 1,
@@ -1034,10 +1121,24 @@ const data = {
                             },
                             {
                                 "id": "5983eae0-61eb-11ee-9f6f-0243f897b3cc",
+=======
+                                "filled_value": 182,
+                                "filled_price": 182,
+                                "filled_qty": 1,
+                                "buy_user_id": 936,
+                                "sell_user_id": 936,
+                                "buy_trading_fee": 0.01,
+                                "sell_trading_fee": 1.82,
+                                "filled_time": "2023-10-03T10:19:46.000Z"
+                            },
+                            {
+                                "id": "0b640d18-61d6-11ee-9f6f-0243f897b3cc",
+>>>>>>> refs/remotes/origin/main
                                 "spot_pair": 42,
                                 "base_symbol": "USDT",
                                 "coin_symbol": "BEAT",
                                 "trade_pair_name": "BEAT/USDT",
+<<<<<<< HEAD
                                 "order_type": 1,
                                 "order_type_name": "Limit",
                                 "direction": 1,
@@ -1049,15 +1150,422 @@ const data = {
                                 "filled_time": "2023-10-03T12:49:54.000Z",
                                 "transaction_id": 272340,
                                 "order_id": "9d7bd05e-61ea-11ee-9f6f-0243f897b3cc"
+=======
+                                "filled_value": 182,
+                                "filled_price": 182,
+                                "filled_qty": 1,
+                                "buy_user_id": null,
+                                "sell_user_id": 936,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 1.82,
+                                "filled_time": "2023-10-03T10:17:23.000Z"
+                            },
+                            {
+                                "id": "8a9f8cc6-61d5-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 42,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BEAT",
+                                "trade_pair_name": "BEAT/USDT",
+                                "filled_value": 182,
+                                "filled_price": 182,
+                                "filled_qty": 1,
+                                "buy_user_id": null,
+                                "sell_user_id": 936,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 1.82,
+                                "filled_time": "2023-10-03T10:13:47.000Z"
+                            },
+                            {
+                                "id": "208a700c-61d5-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 42,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BEAT",
+                                "trade_pair_name": "BEAT/USDT",
+                                "filled_value": 182,
+                                "filled_price": 182,
+                                "filled_qty": 1,
+                                "buy_user_id": null,
+                                "sell_user_id": 936,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 1.82,
+                                "filled_time": "2023-10-03T10:10:49.000Z"
+                            },
+                            {
+                                "id": "de0a9103-61d1-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 42,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BEAT",
+                                "trade_pair_name": "BEAT/USDT",
+                                "filled_value": 18200,
+                                "filled_price": 182,
+                                "filled_qty": 100,
+                                "buy_user_id": null,
+                                "sell_user_id": 936,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 182,
+                                "filled_time": "2023-10-03T09:47:29.000Z"
+                            },
+                            {
+                                "id": "3f923b9e-61cd-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 11,
+                                "filled_price": 0.11,
+                                "filled_qty": 100,
+                                "buy_user_id": 936,
+                                "sell_user_id": 936,
+                                "buy_trading_fee": 1,
+                                "sell_trading_fee": 0.11,
+                                "filled_time": "2023-10-03T09:14:25.000Z"
+                            },
+                            {
+                                "id": "9f26abd0-61cc-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 1,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BTC",
+                                "trade_pair_name": "BTC/USDT",
+                                "filled_value": 8.28276,
+                                "filled_price": 27609.2,
+                                "filled_qty": 0.0003,
+                                "buy_user_id": null,
+                                "sell_user_id": 562,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 0.0828276,
+                                "filled_time": "2023-10-03T09:09:56.000Z"
+                            },
+                            {
+                                "id": "68f043b7-61cc-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 42,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BEAT",
+                                "trade_pair_name": "BEAT/USDT",
+                                "filled_value": 182.87,
+                                "filled_price": 182.87,
+                                "filled_qty": 1,
+                                "buy_user_id": null,
+                                "sell_user_id": 25,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 1.8287,
+                                "filled_time": "2023-10-03T09:08:25.000Z"
+                            },
+                            {
+                                "id": "9086ebf1-61cb-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 1,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BTC",
+                                "trade_pair_name": "BTC/USDT",
+                                "filled_value": 74.406794,
+                                "filled_price": 27609.2,
+                                "filled_qty": 0.002695,
+                                "buy_user_id": 562,
+                                "sell_user_id": 562,
+                                "buy_trading_fee": 0.00002695,
+                                "sell_trading_fee": 0.7440679400000001,
+                                "filled_time": "2023-10-03T09:02:22.000Z"
+                            },
+                            {
+                                "id": "8070fada-61cb-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 42,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BEAT",
+                                "trade_pair_name": "BEAT/USDT",
+                                "filled_value": 292.40913,
+                                "filled_price": 182.87,
+                                "filled_qty": 1.599,
+                                "buy_user_id": 25,
+                                "sell_user_id": null,
+                                "buy_trading_fee": 0.01599,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-03T09:01:55.000Z"
+                            },
+                            {
+                                "id": "3f28c431-61ca-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 1,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BTC",
+                                "trade_pair_name": "BTC/USDT",
+                                "filled_value": 82.689554,
+                                "filled_price": 27609.2,
+                                "filled_qty": 0.002995,
+                                "buy_user_id": 562,
+                                "sell_user_id": null,
+                                "buy_trading_fee": 0.00002995,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-03T08:52:56.000Z"
+                            },
+                            {
+                                "id": "89f96be3-61c9-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 1,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BTC",
+                                "trade_pair_name": "BTC/USDT",
+                                "filled_value": 91.87507,
+                                "filled_price": 27631.6,
+                                "filled_qty": 0.003325,
+                                "buy_user_id": 562,
+                                "sell_user_id": null,
+                                "buy_trading_fee": 0.00003325,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-03T08:47:52.000Z"
+                            },
+                            {
+                                "id": "4ac49801-61c9-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 1,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BTC",
+                                "trade_pair_name": "BTC/USDT",
+                                "filled_value": 102.0714998,
+                                "filled_price": 27631.7,
+                                "filled_qty": 0.003694,
+                                "buy_user_id": 562,
+                                "sell_user_id": null,
+                                "buy_trading_fee": 0.00003694,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-03T08:46:06.000Z"
+                            },
+                            {
+                                "id": "ba4716cb-61c5-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 11,
+                                "filled_price": 0.11,
+                                "filled_qty": 100,
+                                "buy_user_id": 562,
+                                "sell_user_id": 562,
+                                "buy_trading_fee": 1,
+                                "sell_trading_fee": 0.11,
+                                "filled_time": "2023-10-03T08:20:35.000Z"
+                            },
+                            {
+                                "id": "b253c20d-61bc-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 11,
+                                "filled_price": 0.11,
+                                "filled_qty": 100,
+                                "buy_user_id": 562,
+                                "sell_user_id": 562,
+                                "buy_trading_fee": 1,
+                                "sell_trading_fee": 0.11,
+                                "filled_time": "2023-10-03T07:15:56.000Z"
+                            },
+                            {
+                                "id": "055054ff-61aa-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 42,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BEAT",
+                                "trade_pair_name": "BEAT/USDT",
+                                "filled_value": 187.12,
+                                "filled_price": 187.12,
+                                "filled_qty": 1,
+                                "buy_user_id": 25,
+                                "sell_user_id": null,
+                                "buy_trading_fee": 0.01,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-03T05:02:15.000Z"
+                            },
+                            {
+                                "id": "6d4ba0cc-6195-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 1,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BTC",
+                                "trade_pair_name": "BTC/USDT",
+                                "filled_value": 291.2647296,
+                                "filled_price": 27558.4,
+                                "filled_qty": 0.010569,
+                                "buy_user_id": null,
+                                "sell_user_id": 8,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 2.9126472960000003,
+                                "filled_time": "2023-10-03T02:34:50.000Z"
+                            },
+                            {
+                                "id": "8ad52d47-6192-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 1,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BTC",
+                                "trade_pair_name": "BTC/USDT",
+                                "filled_value": 158.6812672,
+                                "filled_price": 27558.4,
+                                "filled_qty": 0.005758,
+                                "buy_user_id": 8,
+                                "sell_user_id": null,
+                                "buy_trading_fee": 0.00005758,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-03T02:14:11.000Z"
+                            },
+                            {
+                                "id": "676ef574-6124-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 1.1,
+                                "filled_price": 0.11,
+                                "filled_qty": 10,
+                                "buy_user_id": 562,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0.1,
+                                "sell_trading_fee": 0.011000000000000001,
+                                "filled_time": "2023-10-02T13:05:47.000Z"
+                            },
+                            {
+                                "id": "66c769bd-6124-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 9.9,
+                                "filled_price": 0.11,
+                                "filled_qty": 90,
+                                "buy_user_id": 571,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0.9,
+                                "sell_trading_fee": 0.099,
+                                "filled_time": "2023-10-02T13:05:46.000Z"
+                            },
+                            {
+                                "id": "f1100ada-6123-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 1.1,
+                                "filled_price": 0.11,
+                                "filled_qty": 10,
+                                "buy_user_id": 562,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0.1,
+                                "sell_trading_fee": 0.011000000000000001,
+                                "filled_time": "2023-10-02T13:02:29.000Z"
+                            },
+                            {
+                                "id": "d5675403-6123-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 1.041,
+                                "filled_price": 0.1041,
+                                "filled_qty": 10,
+                                "buy_user_id": 571,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0.1,
+                                "sell_trading_fee": 0.010409999999999999,
+                                "filled_time": "2023-10-02T13:01:42.000Z"
+                            },
+                            {
+                                "id": "9ae553e2-6123-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 10.89,
+                                "filled_price": 0.11,
+                                "filled_qty": 99,
+                                "buy_user_id": 562,
+                                "sell_user_id": null,
+                                "buy_trading_fee": 0.99,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-02T13:00:04.000Z"
+                            },
+                            {
+                                "id": "d02a0f40-6121-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 0.1041,
+                                "filled_price": 0.1041,
+                                "filled_qty": 1,
+                                "buy_user_id": 562,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-02T12:47:14.000Z"
+                            },
+                            {
+                                "id": "4ce6dddc-6121-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 0.1043,
+                                "filled_price": 0.1043,
+                                "filled_qty": 1,
+                                "buy_user_id": 562,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-02T12:43:34.000Z"
+                            },
+                            {
+                                "id": "dc5055fb-6120-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 0.11,
+                                "filled_price": 0.11,
+                                "filled_qty": 1,
+                                "buy_user_id": 562,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-02T12:40:25.000Z"
+                            },
+                            {
+                                "id": "a6035e16-6120-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 0.11,
+                                "filled_price": 0.11,
+                                "filled_qty": 1,
+                                "buy_user_id": 562,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-02T12:38:54.000Z"
+                            },
+                            {
+                                "id": "22d36be8-6120-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 41,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "ST",
+                                "trade_pair_name": "ST/USDT",
+                                "filled_value": 0.1041,
+                                "filled_price": 0.1041,
+                                "filled_qty": 1,
+                                "buy_user_id": 562,
+                                "sell_user_id": 230,
+                                "buy_trading_fee": 0,
+                                "sell_trading_fee": 0,
+                                "filled_time": "2023-10-02T12:35:14.000Z"
+>>>>>>> refs/remotes/origin/main
                             }
                         ],
                         "pagination": {
                             "current_page": 1,
                             "from": 1,
+<<<<<<< HEAD
                             "last_page": 8,
                             "per_page": 10,
                             "to": 10,
                             "total": 74
+=======
+                            "last_page": 2,
+                            "per_page": 50,
+                            "to": 50,
+                            "total": 78
+>>>>>>> refs/remotes/origin/main
                         }
                     }
                 }
