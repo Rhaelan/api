@@ -972,6 +972,41 @@ const data = {
                 }
             }
         },
+        {
+            name: 'cancel all',
+            description: "cancel all spot order (pending, partially_filled)",
+            path: '/api/cancelAll',
+            method: 'POST',
+            headers: [
+                {
+                    key: 'token',
+                    value: 'deviceId|device_token',
+                    type: 'string',
+                    optional: 'no',
+                    sample: '10260|gg9OaZQmradDJ8uKfuQXbrg0Xl15cKzBe6eAXV50',
+                    description: 'content type to be send to server'
+                }
+            ],
+            body: [
+            ],
+            response: {
+                "status": true,
+                "code": 200,
+                "msg": "Success",
+                "data": {
+                    "data": {
+                        "status": true,
+                        "data": [
+                            "565438d0-62a1-11ee-9f6f-0243f897b3cc",
+                            "57325e87-62a1-11ee-9f6f-0243f897b3cc",
+                            "57f7c37f-62a1-11ee-9f6f-0243f897b3cc",
+                            "58da8134-62a1-11ee-9f6f-0243f897b3cc",
+                            "5ab9c519-62a1-11ee-9f6f-0243f897b3cc"
+                        ]
+                    }
+                }
+            }
+        },
     ]
 };
 
