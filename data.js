@@ -953,6 +953,21 @@ const data = {
                         "status": true,
                         "data": [
                             {
+                                "id": "30d4e7dd-6286-11ee-9f6f-0243f897b3cc",
+                                "spot_pair": 42,
+                                "base_symbol": "USDT",
+                                "coin_symbol": "BEAT",
+                                "trade_pair_name": "BEAT/USDT",
+                                "filled_value": 99.912,
+                                "filled_price": 181,
+                                "filled_qty": 0.552,
+                                "buy_user_id": 562,
+                                "sell_user_id": 562,
+                                "buy_trading_fee": 0.005520000000000001,
+                                "sell_trading_fee": 0.9991200000000001,
+                                "filled_time": "2023-10-04T07:18:17.000Z"
+                            },
+                            {
                                 "id": "de5da235-6282-11ee-9f6f-0243f897b3cc",
                                 "spot_pair": 42,
                                 "base_symbol": "USDT",
@@ -1086,21 +1101,6 @@ const data = {
                                 "buy_trading_fee": 0.01,
                                 "sell_trading_fee": 0.0014,
                                 "filled_time": "2023-10-04T04:04:48.000Z"
-                            },
-                            {
-                                "id": "286d6c88-626b-11ee-9f6f-0243f897b3cc",
-                                "spot_pair": 41,
-                                "base_symbol": "USDT",
-                                "coin_symbol": "ST",
-                                "trade_pair_name": "ST/USDT",
-                                "filled_value": 0.14,
-                                "filled_price": 0.14,
-                                "filled_qty": 1,
-                                "buy_user_id": 562,
-                                "sell_user_id": 25,
-                                "buy_trading_fee": 0.01,
-                                "sell_trading_fee": 0.0014,
-                                "filled_time": "2023-10-04T04:04:47.000Z"
                             }
                         ],
                         "pagination": {
@@ -1109,7 +1109,7 @@ const data = {
                             "last_page": 9,
                             "per_page": 10,
                             "to": 10,
-                            "total": 84
+                            "total": 85
                         }
                     }
                 }
