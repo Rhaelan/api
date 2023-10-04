@@ -411,6 +411,14 @@ const data = {
                     sample: '41 - ST, 42 - BEAT',
                     description: 'trade pair id'
                 },
+                {
+                    key: 'depth',
+                    value: '2',
+                    type: 'interger',
+                    optional: 'yes',
+                    sample: '2',
+                    description: 'depth'
+                },
             ],
             response: {
                 "status": true,
@@ -420,50 +428,31 @@ const data = {
                     "data": {
                         "buy": [
                             {
-                                "order_price": 0.1,
-                                "unfilled_qty": 101,
+                                "order_price": 0.13,
+                                "unfilled_qty": 100,
                                 "side": 1
                             },
                             {
                                 "order_price": 0.11,
                                 "unfilled_qty": 300,
                                 "side": 1
-                            },
-                            {
-                                "order_price": 0.13,
-                                "unfilled_qty": 99.999,
-                                "side": 1
-                            },
-                            {
-                                "order_price": 0.14,
-                                "unfilled_qty": 557.285,
-                                "side": 1
                             }
                         ],
                         "sell": [
                             {
+                                "order_price": 0.14,
+                                "unfilled_qty": 9275721.858,
+                                "side": -1
+                            },
+                            {
                                 "order_price": 0.16,
-                                "unfilled_qty": 99.999,
-                                "side": -1
-                            },
-                            {
-                                "order_price": 181,
-                                "unfilled_qty": 1,
-                                "side": -1
-                            },
-                            {
-                                "order_price": 1000,
-                                "unfilled_qty": 100,
-                                "side": -1
-                            },
-                            {
-                                "order_price": 20000000,
-                                "unfilled_qty": 100,
+                                "unfilled_qty": 500,
                                 "side": -1
                             }
                         ]
                     }
                 }
+            }
             }
         },
 
