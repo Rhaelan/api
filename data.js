@@ -2,9 +2,8 @@
 const data = {
     api_name: 'Node API',
     api_version: '1.0.1',
-    api_endpoint_development: 'https://fple-crypt-spot-orders.vercel.app',
-    api_endpoint_staging: 'https://fple-crypt-spot-orders.vercel.app',
-    api_endpoint_production: 'https://fple-crypt-spot-orders.vercel.app',
+    api_endpoint_staging: 'https://spot-orders.exnice.xyz',
+    api_endpoint_production: 'https://spot-orders.exnice.xyz',
     apis: [
         // Active
         {
@@ -26,7 +25,7 @@ const data = {
                 {
                     key: 'page',
                     value: '1',
-                    type: 'string',
+                    type: 'interger',
                     optional: 'no',
                     sample: '1',
                     description: 'page'
@@ -34,7 +33,7 @@ const data = {
                 {
                     key: 'paginate',
                     value: '10',
-                    type: 'string',
+                    type: 'interger',
                     optional: 'no',
                     sample: '10',
                     description: 'paginate'
@@ -407,7 +406,7 @@ const data = {
                 {
                     key: 'trade_pair_id',
                     value: '41',
-                    type: 'string',
+                    type: 'interger',
                     optional: 'no',
                     sample: '41 - ST, 42 - BEAT',
                     description: 'trade pair id'
@@ -591,7 +590,7 @@ const data = {
                 {
                     key: 'page',
                     value: '1',
-                    type: 'string',
+                    type: 'interger',
                     optional: 'no',
                     sample: '1',
                     description: 'page'
@@ -599,7 +598,7 @@ const data = {
                 {
                     key: 'paginate',
                     value: '10',
-                    type: 'string',
+                    type: 'interger',
                     optional: 'no',
                     sample: '10',
                     description: 'paginate'
@@ -729,7 +728,7 @@ const data = {
                 {
                     key: 'page',
                     value: '1',
-                    type: 'string',
+                    type: 'interger',
                     optional: 'no',
                     sample: '1',
                     description: 'page'
@@ -737,7 +736,7 @@ const data = {
                 {
                     key: 'paginate',
                     value: '10',
-                    type: 'string',
+                    type: 'interger',
                     optional: 'no',
                     sample: '10',
                     description: 'paginate'
