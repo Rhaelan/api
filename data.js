@@ -3,7 +3,7 @@ const data = {
     api_name: 'Node API',
     api_version: '1.0.1',
     api_endpoint_staging: 'https://spot-orders.exnice.xyz',
-    api_endpoint_production: 'https://spot-orders.exnice.xyz',
+    // api_endpoint_production: 'https://spot-orders.exnice.xyz',
     apis: [
         // Active
         {
