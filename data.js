@@ -1007,6 +1007,46 @@ const data = {
                 }
             }
         },
+        {
+            name: 'cancel BATCH',
+            description: "cancel batch spot order (pending, partially_filled)",
+            path: '/api/cancel_batch',
+            method: 'POST',
+            headers: [
+                {
+                    key: 'token',
+                    value: 'deviceId|device_token',
+                    type: 'string',
+                    optional: 'no',
+                    sample: '10260|gg9OaZQmradDJ8uKfuQXbrg0Xl15cKzBe6eAXV50',
+                    description: 'content type to be send to server'
+                }
+            ],
+            body: [
+                {
+                    key: 'order_list',
+                    value: '[\"0072b01d-6330-11ee-9f6f-0243f897b3cc\",\"0492a56f-632f-11ee-9f6f-0243f897b3cc\"]',
+                    type: 'array',
+                    optional: 'no',
+                    sample: '1',
+                    description: 'order id'
+                },
+            ],
+            response: {
+                "status": true,
+                "code": 200,
+                "msg": "Success",
+                "data": {
+                    "data": {
+                        "status": true,
+                        "data": [
+                            "0072b01d-6330-11ee-9f6f-0243f897b3cc",
+                            "0492a56f-632f-11ee-9f6f-0243f897b3cc",
+                        ]
+                    }
+                }
+            }
+        },
     ]
 };
 
